@@ -57,55 +57,35 @@ export default function ProfileSection() {
       <div className="absolute top-0 right-0 w-96 h-96 bg-teal-300/10 rounded-full blur-3xl" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-teal-400/10 rounded-full blur-3xl" />
 
-      <div className="relative z-10 text-center px-4 sm:px-6 py-12">
+      <motion.div
+        className="relative z-10 text-center px-4 sm:px-6 py-12"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
+      >
         {/* Developer Icon */}
-        <motion.div
-          className="mx-auto w-20 h-20 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center mb-6"
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
-        >
+        <div className="mx-auto w-20 h-20 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center mb-6">
           <span className="text-3xl font-bold text-white">&lt;/&gt;</span>
-        </motion.div>
+        </div>
 
         {/* Name */}
-        <motion.h1
-          className="text-4xl sm:text-5xl font-extrabold text-white mb-2"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.1, ease: [0.25, 0.1, 0.25, 1] }}
-        >
+        <h1 className="text-4xl sm:text-5xl font-extrabold text-white mb-2">
           {profileData.name}
           <span className="text-teal-200">.</span>
-        </motion.h1>
+        </h1>
 
         {/* Role */}
-        <motion.p
-          className="text-xl sm:text-2xl font-semibold text-white/90 mb-2"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2, ease: [0.25, 0.1, 0.25, 1] }}
-        >
+        <p className="text-xl sm:text-2xl font-semibold text-white/90 mb-2">
           {profileData.role}
-        </motion.p>
+        </p>
 
         {/* Tagline */}
-        <motion.p
-          className="text-base sm:text-lg text-white/70 mb-8"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
-        >
+        <p className="text-base sm:text-lg text-white/70 mb-8">
           {profileData.tagline}
-        </motion.p>
+        </p>
 
         {/* Social Links */}
-        <motion.div
-          className="flex items-center justify-center gap-4"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
-        >
+        <div className="flex items-center justify-center gap-4">
           {profileData.socials.map((social) => (
             <motion.a
               key={social.platform}
@@ -120,24 +100,19 @@ export default function ProfileSection() {
               <SocialIcon platform={social.platform} />
             </motion.a>
           ))}
-        </motion.div>
+        </div>
 
         {/* Scroll Indicator */}
-        <motion.div
-          className="mt-12"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.8 }}
-        >
+        <div className="mt-12">
           <motion.div
             className="w-6 h-10 border-2 border-white/30 rounded-full mx-auto flex justify-center"
             animate={{ y: [0, 5, 0] }}
             transition={{ repeat: Infinity, duration: 2 }}
           >
-            <motion.div className="w-1.5 h-1.5 bg-white/60 rounded-full mt-2" />
+            <div className="w-1.5 h-1.5 bg-white/60 rounded-full mt-2" />
           </motion.div>
-        </motion.div>
-      </div>
+        </div>
+      </motion.div>
     </section>
   );
 }

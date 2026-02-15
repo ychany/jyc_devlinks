@@ -53,10 +53,6 @@ export default function ProfileSection() {
         }}
       />
 
-      {/* Gradient Accents */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-teal-300/10 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-teal-400/10 rounded-full blur-3xl" />
-
       <motion.div
         className="relative z-10 text-center px-4 sm:px-6 py-12"
         initial={{ opacity: 0, y: 20 }}

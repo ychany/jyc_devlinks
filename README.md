@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DevLinks | 조영찬
+
+개발자 조영찬의 프로젝트 링크 모음 사이트입니다.
+
+> [https://jyc-devlinks.vercel.app](https://jyc-devlinks.vercel.app)
+
+## Preview
+
+- Linktree 스타일의 개발자 링크 허브
+- 포트폴리오 프로젝트 링크를 한곳에서 확인
+- 웹/모바일 반응형 디자인
+- 라이트/다크 모드 지원
+
+## Projects
+
+| # | 프로젝트 | 링크 |
+|---|---------|------|
+| 1 | 코레일 동행열차 | [GitHub](https://github.com/dusagong/korail_donghang_train_app) |
+| 2 | FootHub | [App Store](https://apps.apple.com/kr/app/foothub/id6757123385) · [GitHub](https://github.com/ychany/FootHub) |
+| 3 | 충주 원도심 균형발전 시스템 | [Demo](https://chungju-city-balance.vercel.app) · [GitHub](https://github.com/ychany/chungju_CityBalance) |
+| 4 | 두바이 왕자 | [Demo](https://dujjoncoo.vercel.app) · [Toss](https://minion.toss.im/JesOF8A2) · [GitHub](https://github.com/ychany/dujjoncoo) |
+| 5 | Smoke Trace | [Demo](https://smoketrace.vercel.app) · [Toss](https://minion.toss.im/VKRZG1yg) · [GitHub](https://github.com/ychany/smoke_trace) |
+| 6 | Kickoff | [Demo](https://kickoff-live.vercel.app) · [Toss](https://minion.toss.im/J0lHQcjk) · [GitHub](https://github.com/ychany/kickoff) |
+| 7 | Portfolio | [Demo](https://jyc-portfolio.vercel.app) · [GitHub](https://github.com/ychany/jyc_portfolio) |
+| 8 | DevLinks | [Demo](https://jyc-devlinks.vercel.app) · [GitHub](https://github.com/ychany/jyc_devlinks) |
+
+## Tech Stack
+
+- **Framework** — Next.js 16, React 19, TypeScript
+- **Styling** — Tailwind CSS 4
+- **Animation** — Framer Motion
+- **Theme** — next-themes (Light / Dark)
+- **Font** — Pretendard
+- **Deploy** — Vercel
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+# 의존성 설치
+npm install
+
+# 개발 서버 실행
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# 프로덕션 빌드
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Project Structure
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+src/
+├── app/
+│   ├── globals.css        # 글로벌 스타일, 폰트, 테마 변수
+│   ├── layout.tsx         # 루트 레이아웃 (ThemeProvider)
+│   └── page.tsx           # 메인 페이지
+├── components/
+│   ├── Header.tsx         # 상단 바 (로고 + 다크모드 토글)
+│   ├── ProfileSection.tsx # 프로필 영역
+│   ├── ProjectCard.tsx    # 프로젝트 카드
+│   ├── ProjectsGrid.tsx   # 프로젝트 그리드
+│   ├── Footer.tsx         # 푸터
+│   └── ui/
+│       ├── FadeIn.tsx     # 스크롤 애니메이션
+│       ├── ThemeToggle.tsx# 다크/라이트 토글
+│       ├── LinkButton.tsx # 링크 버튼
+│       └── ScrollToTop.tsx# 스크롤 투 탑
+└── data/
+    └── links.ts           # 프로젝트/프로필 데이터
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## License
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+&copy; 2026 JO YEONG CHAN. All rights reserved.

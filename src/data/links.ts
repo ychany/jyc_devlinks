@@ -205,6 +205,25 @@ export const projectsData: Project[] = [
       },
     ],
   },
+  {
+    id: 8,
+    title: "DevLinks",
+    subtitle: "프로젝트 링크 모음 사이트",
+    techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    period: "2026.02",
+    links: [
+      {
+        type: "demo",
+        url: "https://jyc-devlinks.vercel.app",
+        label: "Live Demo",
+      },
+      {
+        type: "github",
+        url: "https://github.com/ychany/jyc_devlinks",
+        label: "GitHub",
+      },
+    ],
+  },
 ];
 
 export const techTagColors: Record<string, string> = {

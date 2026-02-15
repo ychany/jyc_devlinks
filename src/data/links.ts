@@ -42,6 +42,11 @@ export const profileData: ProfileData = {
       label: "GitHub",
     },
     {
+      platform: "portfolio",
+      url: "https://jyc-portfolio.vercel.app",
+      label: "Portfolio",
+    },
+    {
       platform: "linkedin",
       url: "https://www.linkedin.com/in/ychany-23809637b/",
       label: "LinkedIn",

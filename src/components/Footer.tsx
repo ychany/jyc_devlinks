@@ -10,7 +10,7 @@ export default function Footer() {
             rel="noopener noreferrer"
             className="text-teal-400 hover:text-teal-300 transition-colors"
           >
-            조영찬
+            JO YEONG CHAN
           </a>
           . All rights reserved.
         </p>

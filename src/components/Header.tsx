@@ -27,7 +27,7 @@ export default function Header() {
       animate={{ y: 0 }}
       transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
     >
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 h-8 mt-3 flex items-center justify-between">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 h-11 mt-2 flex items-center justify-between">
         <motion.a
           href="#"
           className="text-xl font-bold text-gray-900 dark:text-white"

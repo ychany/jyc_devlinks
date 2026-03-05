@@ -48,7 +48,7 @@ export const profileData: ProfileData = {
     },
     {
       platform: "linkedin",
-      url: "https://www.linkedin.com/in/ychany-23809637b/",
+      url: "https://www.linkedin.com/in/ychany",
       label: "LinkedIn",
     },
     {

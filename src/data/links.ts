@@ -224,7 +224,7 @@ export const projectsData: Project[] = [
       },
       {
         type: "github",
-        url: "https://github.com/goormthon-5",
+        url: "https://github.com/goormthon-5/goormthon-5-frontend",
         label: "GitHub",
       },
     ],

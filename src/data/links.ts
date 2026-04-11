@@ -211,6 +211,25 @@ export const projectsData: Project[] = [
     ],
   },
   {
+    id: 9,
+    title: "삼춘이랑",
+    subtitle: "제주 독거노인 × 청년·여행객 매칭 커뮤니티 서비스",
+    techStack: ["React", "TypeScript", "Tailwind CSS"],
+    period: "2026.04",
+    links: [
+      {
+        type: "demo",
+        url: "https://samchoon-irang.vercel.app",
+        label: "Live Demo",
+      },
+      {
+        type: "github",
+        url: "https://github.com/goormthon-5",
+        label: "GitHub",
+      },
+    ],
+  },
+  {
     id: 8,
     title: "DevLinks",
     subtitle: "프로젝트 링크 모음 사이트",
